@@ -11,8 +11,8 @@ import { onBeforeUnmount } from 'vue'
 const router = useRouter()
 const authListener = onAuthStateChanged(getAuth(),function(user) {
     if (!user) { // not logged in
-        alert('you must be logged in to view this. redirecting to the home page')
-        router.push('/')
+        alert('you must be logged in to view this. redirecting to the register page')
+        router.push('/register')
     }
 });
 
